@@ -26,3 +26,5 @@ Add images of people to be classified in directories named after each person. Th
 
 ### Recognize an unknown face
 <code>recognize [image/path]</code>
+
+#####[Original resource](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78#.fh7imzgnm)
