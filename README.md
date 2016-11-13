@@ -1,12 +1,13 @@
 # Face Recognition
 
 ### Install Docker
-[Installation guide](https://docs.docker.com/engine/getstarted/step_one/)
+[Installation guide](https://docs.docker.com/engine/getstarted/step_one/)</br>
+[Docker commands](https://docs.docker.com/engine/reference/commandline/)
 
-### Pull docker container
+### Pull Docker container
 <code>docker pull elihar/openface</code>
 
-### Run docker container
+### Run Docker container
 <code>docker run -v [shared/directory/path]:/root/openface/shared -p 9000:9000 -p 8000:8000 -t -i elihar/openface /bin/bash</code>
 
 ### Go to openface directory
