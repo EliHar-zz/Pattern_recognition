@@ -16,13 +16,13 @@
 ### Add training data
 Add images of people to be classified in directories named after each person. These will be the classes. Then move these directories to <code>./training-images/</code>
 
-### Do pose detection and alignment
+### Face detection, cropping, pose detection and alignment
 <code>pose_detect_align</code>
 
-### Generate the representations from the aligned images
+### Extract 128 features per face and generate a face representation
 <code>gen_rep</code>
 
-### Train the face detection model
+### Train a face detection model
 <code>train_model</code>
 
 ### Recognize an unknown face
