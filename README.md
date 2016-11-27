@@ -17,18 +17,27 @@
 Add images of people to be classified in directories named after each person. These will be the classes. Then move these directories to <code>./training-images/</code>
 
 ### Face detection, cropping, pose detection and alignment
-<code>pose_detect_align</code>
+<code>pose_detect_align</code> OR
+
+<code>./util/align-dlib.py ./training-images/ align outerEyesAndNose ./aligned-images/ --size 96</code>
 
 ### Extract 128 features per face and generate a face representation
-<code>gen_rep</code>
+<code>gen_rep</code> OR
+
+<code>./batch-represent/main.lua -outDir ./generated-embeddings/ -data ./aligned-images/</code>
 
 ### Train a face recognition model with desired classifier
-<code>train_model [classifier name]</code>
+<code>train_model [classifier name]</code> OR
+
+<code>./demos/classifier.py train ./generated-embeddings/ --classifier [classifier name]</code>
 
 Classifier name: <code>LinearSvm, GridSearchSvm, GMM, RadialSvm, DecisionTree, GaussianNB, DBN</code>
 
 ### Recognize an unknown face
-<code>recognize [image/path]</code>
+<code>recognize [image/path]</code> OR
+
+<code>./demos/classifier.py infer ./generated-embeddings/classifier.pkl [image/path]</code>
+
 Add <code>--multi</code> for recognizing multiple faces in an image
 
 #####[Original resource](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78#.fh7imzgnm)
