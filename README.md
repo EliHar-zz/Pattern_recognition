@@ -40,4 +40,12 @@ Classifier name: <code>LinearSvm, GridSearchSvm, GMM, RadialSvm, DecisionTree, G
 
 Add <code>--multi</code> for recognizing multiple faces in an image
 
+
+### Web Interface
+Navigate to <code>/root/web_server</code>
+
+run <code>python server.py</code>
+
+Open <code>0.0.0.0:8000</code> in Chrome or Firefox
+
 #####[Original resource](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78#.fh7imzgnm)
