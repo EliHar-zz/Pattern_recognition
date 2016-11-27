@@ -22,10 +22,13 @@ Add images of people to be classified in directories named after each person. Th
 ### Extract 128 features per face and generate a face representation
 <code>gen_rep</code>
 
-### Train a face detection model
-<code>train_model</code>
+### Train a face recognition model with desired classifier
+<code>train_model [classifier name]</code>
+
+Classifier name: <code>LinearSvm, GridSearchSvm, GMM, RadialSvm, DecisionTree, GaussianNB, DBN</code>
 
 ### Recognize an unknown face
 <code>recognize [image/path]</code>
+Add <code>--multi</code> for recognizing multiple faces in an image
 
 #####[Original resource](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78#.fh7imzgnm)
